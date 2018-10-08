@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>JAVA中基本数据类型转换 | Hexo</title>
+  <title>“hexo发布带图片博客” | Hexo</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -173,32 +173,24 @@
         <div class="row col-md-offset-2">
             <div class="col-md-8">
     			<span class="post-meta">
-      <time datetime="2018-10-08T15:30:31.000Z" itemprop="datePublished">
+      <time datetime="2018-10-08T15:45:46.000Z" itemprop="datePublished">
           2018-10-08
       </time>
     
 </span>
-                <h1>JAVA中基本数据类型转换</h1>
+                <h1>“hexo发布带图片博客”</h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<h1 id="JAVA中基本数据类型转换"><a href="#JAVA中基本数据类型转换" class="headerlink" title="JAVA中基本数据类型转换"></a>JAVA中基本数据类型转换</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 强制类型转换（显示转换）</span></span><br><span class="line"><span class="comment"> * 具体规则为：double→float→long→int→short(char)→byte</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">        <span class="comment">//float f1 = 12.5;        //编译错误: 12.5默认为double类型，不存在double</span></span><br><span class="line">                                  <span class="comment">//到float的自动转换</span></span><br><span class="line">        <span class="keyword">float</span> f2 = (<span class="keyword">float</span>)<span class="number">12.5</span>;   <span class="comment">//编译通过: double到float的强制转换</span></span><br><span class="line">        <span class="keyword">float</span> f3 = <span class="number">12.5f</span>;         <span class="comment">//编译通过：后缀f，常量12.5f为float类型</span></span><br><span class="line">        <span class="keyword">int</span> i1 = (<span class="keyword">int</span>)<span class="number">12.5</span>;       <span class="comment">//编译通过: double到int类型的强制转换</span></span><br><span class="line">        <span class="keyword">long</span> l = <span class="number">12L</span>;             <span class="comment">//编译通过: int到long类型的强制转换(数字后L)</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">/*显示转换可能会导致精度损失，也可能由于溢出而导致转换结果不正确*/</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">byte</span> b1 = (<span class="keyword">byte</span>)<span class="number">12.5</span>;     <span class="comment">//最终结果: 12，精度损失（字节长度有关）</span></span><br><span class="line">        <span class="keyword">byte</span> b2 = (<span class="keyword">byte</span>)<span class="number">128</span>;      <span class="comment">//最终结果: -128，结果溢出</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 自动类型转换（隐式转换）</span></span><br><span class="line"><span class="comment"> * 具体规则为：byte→short(char)→int→long→float→double</span></span><br><span class="line"><span class="comment"> * （小范围的类型到大范围类型的转换，转换后数值不会发生影响）</span></span><br><span class="line"><span class="comment"> * 注意:隐式转换可能会降低精度，例如，long到float转换</span></span><br><span class="line"><span class="comment"> * 注意:不存在char类型的隐式转换</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">        <span class="keyword">byte</span> b1 = <span class="number">123</span>;      <span class="comment">//编译通过:整形常量123从int到byte的自动转换</span></span><br><span class="line">        <span class="keyword">byte</span> b2 = <span class="number">992</span>;      <span class="comment">//编译错误，byte取值范围在-128~127之间</span></span><br><span class="line">        <span class="keyword">short</span> s1 = <span class="number">922</span>;     <span class="comment">//编译通过:整形常量922从int到short的自动转换</span></span><br><span class="line">        <span class="keyword">long</span> long1 = <span class="number">922</span>;   <span class="comment">//编译通过:整形常量922从int到long的自动转换</span></span><br><span class="line">        <span class="keyword">float</span> f1 = <span class="number">922</span>;     <span class="comment">//编译通过:整形常量922从int到float的自动转换</span></span><br><span class="line">        <span class="keyword">double</span> d1 = <span class="number">922</span>;    <span class="comment">//编译通过:int到double的隐式转换</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//由于基本数据类型中 boolean 类型不是数字型，所以基本数据类型转换不包括 boolean 类型</span></span><br></pre></td></tr></table></figure>
-<h3 id="JAVA命名规范"><a href="#JAVA命名规范" class="headerlink" title="JAVA命名规范"></a>JAVA命名规范</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Java命名规则</span></span><br><span class="line"><span class="comment"> * （目前程序设计一般遵循两种命名约定，PascalCase和camelCase吗、，例如:MyClass,TestData遵循   </span></span><br><span class="line"><span class="comment"> * PascalCase；</span></span><br><span class="line"><span class="comment"> * 而myValue，firstName等遵循camelCase规则。PascalCase一般用于自定义类型，camelCase一般用于变量名）</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 为了增强程序的可读性，java语言的命名规则一般遵循如下定义:</span></span><br><span class="line"><span class="comment"> * (1)包:通常使用名词，全部小写，单词之间用英文句点(.)分割</span></span><br><span class="line"><span class="comment"> * (2)类、接口:通常使用名词，且每个单词的首字母要大写（PascalCase命名约定）</span></span><br><span class="line"><span class="comment"> * (3)方法:通常使用动词，首字母小写，其后用大写字母分隔每个单词（camelCase命名约定）</span></span><br><span class="line"><span class="comment"> * (4)常量:通常使用名词，全部大写，单词之间用下划线（_）分隔</span></span><br><span class="line"><span class="comment"> * (5)变量:通常使用名词，首字母小写，其后用大写字母分隔每个单词，避免使用$符号（camelCase命名约定）</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
-<pre><code>2018-10.1/周一
-  by 922
-</code></pre>
+      		
             <div class="clearfix"></div>
             <hr class="nogutter">
         </div>
         <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
     
-    <a class="pull-left" href="/2018/10/08/“hexo发布带图片博客”/" style="float: left;">
-        ← “hexo发布带图片博客”
-    </a>
     
-    
-    <a class="pull-right" href="/2018/10/08/用命令行中编写第一个HelloWorld/">
-        用命令行中编写第一个HelloWorld →
+    <a class="pull-right" href="/2018/10/08/JAVA中基本数据类型转换/">
+        JAVA中基本数据类型转换 →
     </a>
     
 </nav>
