@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<!--<![endif]-->
+
+<head>
+  <title>Hexo</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Hexo">
+    <meta name="author" content="922">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+    
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+  
+  
+  
+
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            <li>
+                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                        <li><a href="/" target="_BLANK" class="animsition-link">AAA</a></li>
+                    
+                        <li><a href="/atom.xml" target="_BLANK" class="animsition-link">BBB</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li>
+                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a href="http://go.kieran.top/" class="animsition-link">Kieran</a></li>
+                    
+                    <li><a href="http://domain.com/" class="animsition-link">Name</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">Hexo</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+                            
+                            
+                            <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+                            
+                            
+                            <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a></li>
+                            
+                            
+                            <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2018-10-08T14:44:15.553Z" itemprop="datePublished">
+          2018-10-08
+      </time>
+    
+</span>
+                <h1></h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<h1 id="使用hexo-github搭建免费个人博客"><a href="#使用hexo-github搭建免费个人博客" class="headerlink" title="使用hexo+github搭建免费个人博客"></a>使用hexo+github搭建免费个人博客</h1><hr>
+<p>[TOC]</p>
+<h3 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h3><hr>
+<p><strong>github pages介绍：</strong></p>
+<p>1.一般多用于托管个人的静态网站</p>
+<p>2.省去了购买服务器、域名等等一系列复杂的操作</p>
+<p><strong>github pages好处：</strong></p>
+<p>1.全是静态文件，访问速度快</p>
+<p>2.免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台</p>
+<p>3.数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行</p>
+<p>4.博客内容可以轻松打包、转移、发布到其它平台</p>
+<p>5.等</p>
+<h3 id="2-准备工作"><a href="#2-准备工作" class="headerlink" title="2.准备工作"></a>2.准备工作</h3><hr>
+<p>1.注册一个github账号（已有不用）</p>
+<p>2.安装了node.js、npm，并了解相关基础知识；</p>
+<p>3.安装了git for windows（或者其它git客户端）</p>
+<h3 id="3-开始搭建github博客"><a href="#3-开始搭建github博客" class="headerlink" title="3.开始搭建github博客"></a>3.开始搭建github博客</h3><hr>
+<p><strong>github中创建仓库</strong></p>
+<p>仓库名为<strong>用户名.github.io（必须与用户名一致），</strong>网站访问地址是 <a href="http://test.github.io/" target="_blank" rel="noopener">http://用户名.github.io</a> 了创建成功后，默认会在你这个仓库里生成一些示例页面，以后你的网站所有代码都是放在这个仓库里。</p>
+<h3 id="4-配置SSH-key"><a href="#4-配置SSH-key" class="headerlink" title="4.配置SSH key"></a>4.配置SSH key</h3><hr>
+<p>配置原因：因为提交代码肯定要拥有你的github权限才可以，但是直接使用用户名和密码太不安全了，所以我们使用ssh key来解决本地和服务器的连接问题</p>
+<p><strong>用git bash执行如下命令：</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1.$ cd~/.ssh   #检查本机已存在的ssh密钥</span><br></pre></td></tr></table></figure>
+<p>（如果提示：No such file or directory 说明你是第一次使用git。）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">2</span>.$ ssh-keygen -t rsa -C <span class="string">"邮件地址"</span></span><br></pre></td></tr></table></figure>
+<p>（然后连续3次回车，最终会生成一个文件在用户目录下，打开用户目录，到.ssh\id_rsa.pub文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key：）</p>
+<p>（id_rsa和id_rsa.pub,分别表示私钥和公钥文件, 私钥文件自己使用, 公钥文件需要上传到Github上.）</p>
+<p>3.<strong>测试是否成功</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -Tgit@github.com   #注意邮箱地址不用改</span><br></pre></td></tr></table></figure>
+<p>（如果提示Are you sure you want to continue connecting (yes/no)?，输入yes，然后会看到：Hi QzzBL You’ve successfully authenticated, but GitHub does not provide shell access.）</p>
+<p>说明SSH已配置成功！</p>
+<p>4.继续配置<strong>设置用户信息</strong>：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"liuxianan"</span><span class="comment">// 你的github用户名，非昵称</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.email <span class="string">"xxx@qq.com"</span><span class="comment">// 填写你的github注册邮箱</span></span><br></pre></td></tr></table></figure>
+<h3 id="5-hexo写博客"><a href="#5-hexo写博客" class="headerlink" title="5.hexo写博客"></a>5.hexo写博客</h3><hr>
+<p><strong>5.1</strong> 安装</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install-g hexo</span><br></pre></td></tr></table></figure>
+<p><strong>5.2</strong> 初始化</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ cd/f/Workspaces/hexo/</span><br><span class="line"></span><br><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
+<p><strong>5.3</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g   # 生成（静态页面）</span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s   # 启动服务</span><br></pre></td></tr></table></figure>
+<p>（开启本地预览服务，打开浏览器访问 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000</a> 即可看到内容）</p>
+<p>（执行以上命令之后，hexo就会在public文件夹生成相关html文件，这些文件将来都是要提交到github去的：）</p>
+<h3 id="6-上传到github"><a href="#6-上传到github" class="headerlink" title="6.上传到github"></a>6.上传到github</h3><hr>
+<p>首先，ssh key肯定要配置好。</p>
+<p>其次，配置_config.yml中有关deploy的部分：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">- 正确写法：</span><br><span class="line"></span><br><span class="line">        deploy:  type: git  </span><br><span class="line"></span><br><span class="line">        repository:git<span class="meta">@github</span>.com:liuxianan/liuxianan.github.io.git  </span><br><span class="line"></span><br><span class="line">        branch: master</span><br><span class="line"></span><br><span class="line">- 错误写法：</span><br><span class="line"></span><br><span class="line">        deploy:  type: github  </span><br><span class="line"></span><br><span class="line">        repository:https:<span class="comment">//github.com/liuxianan/liuxianan.github.io.git</span></span><br><span class="line"></span><br><span class="line">        branch: master</span><br></pre></td></tr></table></figure>
+<p><strong>（</strong>后面一种写法是hexo2.x的写法，现在已经不行了，无论是哪种写法，此时直接执行hexo d的话一般会报如下错误：</p>
+<p>Deployer not found: github 或者 Deployer not found: git</p>
+<p><strong>原因是还需要安装一个插件：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>（hexo-deployer-git 会存在于node_modules文件夹中）</p>
+<p><strong>）</strong></p>
+<p><strong>打开你的git bash，输入hexo d就会将本次有改动的代码全部提交</strong></p>
+<h3 id="7-常见hexo命令及上传步骤"><a href="#7-常见hexo命令及上传步骤" class="headerlink" title="7.常见hexo命令及上传步骤"></a>7.常见hexo命令及上传步骤</h3><hr>
+<p>常见命令</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">hexo new "postName" #新建文章</span><br><span class="line"></span><br><span class="line">hexo new page "pageName" #新建页面</span><br><span class="line"></span><br><span class="line">hexo generate #生成静态页面至public目录</span><br><span class="line"></span><br><span class="line">hexo server #开启预览访问端口（默认端口4000，'ctrl + c'关闭server）</span><br><span class="line"></span><br><span class="line">hexo deploy #部署到GitHub</span><br><span class="line"></span><br><span class="line">hexo help  # 查看帮助</span><br><span class="line"></span><br><span class="line">hexo version  #查看Hexo的版本</span><br><span class="line"></span><br><span class="line">hexo <span class="keyword">new</span> page <span class="string">'postName'</span>命令和hexo <span class="keyword">new</span> <span class="string">'postName'</span>有区别：</span><br><span class="line"></span><br><span class="line">hexo <span class="keyword">new</span> page <span class="string">"my-second-blog"</span></span><br></pre></td></tr></table></figure>
+<p><strong>生成如下：</strong></p>
+<p>最终部署时生成：hexo\public\my-second-blog\index.html，但是它不会作为文章出现在博文目录。</p>
+<p>缩写：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo n == hexo <span class="keyword">new</span></span><br><span class="line"></span><br><span class="line">hexo g == hexo generate（此三步骤完成上传）</span><br><span class="line"></span><br><span class="line">hexo s == hexo server</span><br><span class="line"></span><br><span class="line">hexo d == hexo deploy</span><br></pre></td></tr></table></figure>
+<p><strong>组合命令：</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo s -g #生成并本地预览</span><br><span class="line"></span><br><span class="line">hexo d -g #生成并上传</span><br></pre></td></tr></table></figure>
+<h3 id="8-个人安装时问题"><a href="#8-个人安装时问题" class="headerlink" title="8.个人安装时问题"></a>8.个人安装时问题</h3><hr>
+<p>1.访问username.github.io时出现404错误（可能与没有分支 git init 等安装分支）</p>
+<p>2.主题修改本地可看，github上看不了</p>
+<p>3.等等</p>
+<h3 id="9-参考文章"><a href="#9-参考文章" class="headerlink" title="9.参考文章"></a>9.参考文章</h3><hr>
+<p><a href="http://blog.haoji.me/build-blog-website-by-hexo-github.html?from=xa" target="_blank" rel="noopener">http://blog.haoji.me/build-blog-website-by-hexo-github.html?from=xa</a></p>
+<p><a href="https://www.jianshu.com/p/380290deb8f0" target="_blank" rel="noopener">https://www.jianshu.com/p/380290deb8f0</a></p>
+<p><a href="https://blog.csdn.net/zxy987872674/article/details/72491066" target="_blank" rel="noopener">https://blog.csdn.net/zxy987872674/article/details/72491066</a></p>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
+    
+    <a class="pull-left" href="/2018/10/08/用命令行中编写第一个HelloWorld/" style="float: left;">
+        ← 
+    </a>
+    
+    
+    <a class="pull-right" href="/2018/10/08/JAVA中基本数据类型转换/">
+         →
+    </a>
+    
+</nav>
+
+        <div class="col-md-8 col-md-offset-2 col-sm-24"><script type="text/javascript">
+  /**
+   * 搜狐畅言
+   */
+
+  /*
+  document.write('<div id="SOHUCS" sid="' + window.location.pathname.slice(1) + '" ></div>');
+
+  window.onload = function () {
+    (function () {
+      var appid = 'cytXXXX';
+      var conf = 'prod_xxxxxxxxxxxxxxxxx';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      var loadJs = function (d, a, id) {
+        var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+        var b = document.createElement("script");
+        b.setAttribute("type", "text/javascript");
+        b.setAttribute("charset", "UTF-8");
+        b.setAttribute("src", d);
+        if (id) {
+          b.setAttribute("id", id);
+        }
+        if (typeof a === "function") {
+          if (window.attachEvent) {
+            b.onreadystatechange = function () {
+              var e = b.readyState;
+              if (e === "loaded" || e === "complete") {
+                b.onreadystatechange = null;
+                a()
+              }
+            }
+          } else {
+            b.onload = a
+          }
+        }
+        c.appendChild(b)
+      };
+
+      loadJs("https://changyan.sohu.com/upload/changyan.js", function () {
+        window.changyan.api.config({
+          appid: appid,
+          conf: conf
+        })
+      });
+    })();
+  }
+  */
+
+</script>
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By 922. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+
+    resizeHero();
+
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$('#intro').find('img').each(function(){
+  var alt = this.alt;
+
+  if (alt){
+    $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
+  }
+
+  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
+});
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+      
+</body>
+</html>
